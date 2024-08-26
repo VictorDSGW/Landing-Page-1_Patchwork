@@ -1,3 +1,21 @@
+/* IMPORTS */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+/* PAGES */
+@import './layout/header.css';
+
 :root {
-  --color-primary-1: #fff;
+  --color-primary-1: #dca0a0;
+  --color-primary-2: #dca0a02d;
+  --color-neutral-1: #fff;
+  --color-neutral-2: #000;;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-primary-2);
 }
