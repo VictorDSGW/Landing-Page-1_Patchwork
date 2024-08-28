@@ -7,15 +7,40 @@
 :root {
   --color-primary-1: #dca0a0;
   --color-primary-2: #dca0a02d;
+  --color-primary-3: #dbaaaaad;
   --color-neutral-1: #fff;
   --color-neutral-2: #000;;
 }
 
 * {
+  /* font-family: !; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--color-primary-2);
+}
+
+.btn-default {
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  font-weight: 600;
+  background-color: var(--color-primary-1);
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn-default:hover {
+  background-color: var(--color-primary-3);
+}
+
+.btn-default a {
+  text-decoration: none;
+  color: var(--color-neutral-2);
 }

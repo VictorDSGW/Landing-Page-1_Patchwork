@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="./src/styles/styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <title>Patchwork Landing Page</title>
 </head>
 
@@ -13,25 +14,37 @@
   <header>
     <nav class="navbar">
       <i class="fa-solid fa-vest-patches" id="nav-logo"> Patchwork</i>
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Produtos</a></li>
+
+      <ul id="ul">
+        <li class="li active"><a href="#home">Início</a></li>
+        <li class="li"><a href="#">Sobre</a></li>
+        <li class="li"><a href="#">Produtos</a></li>
       </ul>
+
       <button class="btn-default">
         <a href="#contact">Contato</a>
       </button>
+  
+      <button class="btn-menu_mobile">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
     </nav>
 
-    <nav class="mobile-navbar">
+
+    <div class="menu_mobile">
       <ul>
         <li><a href="#home">Início</a></li>
         <li><a href="#about">Sobre</a></li>
         <li><a href="#products">Produtos</a></li>
-        <li><a href="#contact">Contato</a></li>
       </ul>
-    </nav>
-  </header>
-</body>
 
+      <button class="btn-default">
+        <a href="#contact">Contato</a>
+      </button>  
+    </div>
+  </header>
+
+  <script src="./src/scripts/scripts.js"></script>
+</body>
 </html>
