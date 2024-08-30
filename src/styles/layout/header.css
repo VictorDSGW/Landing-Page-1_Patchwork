@@ -13,26 +13,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 16px; */
 }
 
 #nav-logo {
-  /* font-size: medium; */
   color: var(--color-primary-1);
 }
 
 .navbar ul {
-/* #ul { */
   display: flex;
   list-style: none;
   gap: 64px;
 }
 
 .navbar li a {
-/* .li a { */
   text-decoration: none;
   margin: 16px;
-  color: var(--color-neutral-2);
+  color: var(--color-neutral-dark-2);
 }
 
 .li.active a {
@@ -49,7 +45,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .navbar ul,
   .navbar ul li a,
   nav .btn-default {
@@ -82,7 +78,7 @@ header {
     text-align: center;
     & a { /*!*/
       text-decoration: none;
-      color: var(--color-neutral-2);
+      color: var(--color-neutral-dark-1);
     }
   }
 }

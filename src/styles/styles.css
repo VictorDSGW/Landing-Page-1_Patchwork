@@ -3,13 +3,16 @@
 
 /* PAGES */
 @import './layout/header.css';
+@import './layout/home.css';
 
 :root {
   --color-primary-1: #dca0a0;
   --color-primary-2: #dca0a02d;
   --color-primary-3: #dbaaaaad;
-  --color-neutral-1: #fff;
-  --color-neutral-2: #000;;
+  --color-neutral-light-1: #fff;
+  --color-neutral-light-2: #dbdbdb;
+  --color-neutral-dark-1: #000;
+  --color-neutral-dark-2: #252020;
 }
 
 * {
@@ -23,6 +26,12 @@ body {
   background-color: var(--color-primary-2);
 }
 
+section {
+  padding: 16px 0%;
+}
+
+/* COMPONENTS */
+
 .btn-default {
   border: none;
   border-radius: 12px;
@@ -33,7 +42,7 @@ body {
   font-weight: 600;
   background-color: var(--color-primary-1);
   cursor: pointer;
-  transition: .2s ease;
+  transition: background-color .2s ease;
 }
 
 .btn-default:hover {
@@ -42,5 +51,41 @@ body {
 
 .btn-default a {
   text-decoration: none;
-  color: var(--color-neutral-2);
+  color: var(--color-neutral-dark-1);
+}
+
+.btns-social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.btns-social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: var(--color-neutral-light-1);
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);;
+  transition: .3s ease;
+}
+
+.btns-social-media a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);;
+}
+
+.zap {
+  background: #25D366;
+}
+
+.insta {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.fb {
+  background: #4267B2;
 }
