@@ -4,11 +4,14 @@
 /* PAGES */
 @import './layout/header.css';
 @import './layout/home.css';
+@import './layout/items.css';
 
 :root {
   --color-primary-1: #dca0a0;
   --color-primary-2: #dca0a02d;
   --color-primary-3: #dbaaaaad;
+  /* --color-secondary-1: #e9a; */
+  --color-secondary-1: #e9a209;
   --color-neutral-light-1: #fff;
   --color-neutral-light-2: #dbdbdb;
   --color-neutral-dark-1: #000;
@@ -88,4 +91,13 @@ section {
 
 .fb {
   background: #4267B2;
+}
+
+.section-title {
+  color: var(--color-primary-1);
+  font-size: 1.5rem;
+}
+
+.section-subtitle {
+  font-size: 2rem;
 }
