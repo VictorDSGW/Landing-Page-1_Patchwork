@@ -5,8 +5,10 @@
 @import './layout/header.css';
 @import './layout/home.css';
 @import './layout/items.css';
+@import './layout/feedbacks.css';
 
 :root {
+  --bg-color: #f8eeee;
   --color-primary-1: #dca0a0;
   --color-primary-2: #dca0a02d;
   --color-primary-3: #dbaaaaad;
@@ -26,7 +28,7 @@
 }
 
 body {
-  background-color: var(--color-primary-2);
+  background-color: var(--bg-color);
 }
 
 section {
