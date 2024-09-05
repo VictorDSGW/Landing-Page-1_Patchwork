@@ -1,11 +1,14 @@
 /* IMPORTS */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Tangerine:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap'); */
 
 /* PAGES */
 @import './layout/header.css';
 @import './layout/home.css';
 @import './layout/items.css';
 @import './layout/feedbacks.css';
+@import './layout/about.css';
 
 :root {
   --bg-color: #f8eeee;
