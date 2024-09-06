@@ -9,6 +9,7 @@
 @import './layout/items.css';
 @import './layout/feedbacks.css';
 @import './layout/about.css';
+@import './layout/contact.css';
 
 :root {
   --bg-color: #f8eeee;

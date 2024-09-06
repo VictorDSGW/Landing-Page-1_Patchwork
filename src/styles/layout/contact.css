@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  min-height: calc(100vh - 71px);
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 48px;
+  gap: 6px;
+  
+  & input, textarea, button {
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-dark-1);
+    border: none;
+    width: 100%;
+    max-width: 90%;
+    padding: 16px 8px;
+    resize: block;
+    outline: 0;
+  }
+
+  & #ip-name {
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+  }
+
+  & .btn-form {
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--color-primary-3);
+      cursor: pointer;
+    }
+  }
+} 
