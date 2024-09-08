@@ -65,6 +65,12 @@
   transform: scale(0.5);
 }
 
+#i-4 img {
+  top: -25px;
+  left: -160px;
+  transform: scale(0.55);
+}
+
 
 .item-heart {
   position: absolute;
