@@ -12,6 +12,9 @@
 @import './layout/contact.css';
 @import './layout/footer.css';
 
+/* COMPONENTS */
+@import './components/btnComponents.css';
+
 :root {
   --bg-color: #f8eeee;
   --color-primary-1: #dca0a0;
@@ -32,72 +35,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color);
 }
 
 section {
   padding: 16px 0%;
-}
-
-/* COMPONENTS */
-
-.btn-default {
-  border: none;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-  font-weight: 600;
-  background-color: var(--color-primary-1);
-  cursor: pointer;
-  transition: background-color .2s ease;
-}
-
-.btn-default:hover {
-  background-color: var(--color-primary-3);
-}
-
-.btn-default a {
-  text-decoration: none;
-  color: var(--color-neutral-dark-1);
-}
-
-.btns-social-media {
-  display: flex;
-  gap: 16px;
-}
-
-.btns-social-media a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 25%;
-  font-size: 1.9rem;
-  text-decoration: none;
-  color: var(--color-neutral-light-1);
-  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);;
-  transition: .3s ease;
-}
-
-.btns-social-media a:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.1);;
-}
-
-.zap {
-  background: #25D366;
-}
-
-.insta {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.fb {
-  background: #4267B2;
 }
 
 .section-title {

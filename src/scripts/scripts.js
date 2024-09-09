@@ -1,9 +1,4 @@
 $(document).ready(function(){
-  $('.btn-menu_mobile').on('click', function(){
-    $('.menu_mobile').toggleClass('active');
-    $('.btn-menu_mobile').find('i').toggleClass('fa-x');
-  });
-
   const sections = $('section');
   const navItems = $('.li');
 
@@ -33,29 +28,4 @@ $(document).ready(function(){
     navItems.removeClass('active');
     $(navItems[activeSectionIndex]).addClass('active');
   });
-  
-  ScrollReveal().reveal('.cta', {
-    origin: 'right',
-    duration: 2500,
-    distance: '50%',
-  })
-
-  ScrollReveal().reveal('.item', {
-    origin: 'bottom',
-    duration: 1000,
-    distance: '10%',
-  })
-
-  ScrollReveal().reveal('#testimonial', {
-    origin: 'right',
-    duration: 1500,
-    distance: '15%',
-  })
-
-  ScrollReveal().reveal('input, textarea', {
-    origin: 'bottom',
-    duration: 2000,
-    distance: '20%',
-  })
-
 });
